@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Dymaxion_Chronofile</title>
+</head>
+<body>
+    <header>
+        <h1>Dymaxion Chronofile</h1>
+        <nav>
+            <a href="index.html" class="current-page">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="content">
+    <!-- Sample Blog Post -->
+    <!-- 
+        <div id="blog-post">
+            <div href="" class="blog-link">
+                <div class="img-wrapper">
+                    <img src="" alt="">
+                </div>
+                <div class="txt-wrapper">
+                    <h2>2020-06-14</h2>
+                    <p></p><br>
+                    <p></p><br>
+                    <p><span class="read-more">[ Read More ]</span></p>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="txt-wrapper">
+                    <h2></h2>
+                    <p></p>
+                </div>
+                <div class="img-wrapper-large "> 
+                    <img src="img/logo.png"  class="img-large" id="img-large" alt="">
+                </div>
+            </div>
+        </div> 
+
+    -->
+
+    <div id="blog-post" class="clickEvent" onclick="showHide(hidden)">
+        <div href="" class="blog-link">
+            <div class="img-wrapper">
+                <img src="https://via.placeholder.com/350x250/000000?" alt="">
+            </div>
+            <div class="txt-wrapper">
+                <h2>Title & Date</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nisi.</p><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, aliquid reiciendis aperiam expedita accusamus vel eligendi molestias dignissimos quis! Odio distinctio officiis recusandae necessitatibus sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptate?</p>
+                <span class="read-more">[ Read More ]</span>
+            </div>
+        </div>
+        <div id="hidden" class="hidden">
+            <div class="txt-wrapper">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ex reiciendis aperiam repellendus ducimus pariatur maxime, illo dolorum est incidunt quidem eaque, delectus dolorem! Sapiente. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt consequatur dignissimos rem. Iure commodi quisquam perferendis praesentium quo labore animi. Animi nobis placeat, fugiat necessitatibus quo quam veniam rerum.</p>
+
+
+                <p> This is where I would put the other thing - if I had the time to do it</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quaerat ullam est temporibus eveniet quae molestiae enim deserunt labore dolores iure animi iusto fuga accusantium facilis, ipsum alias vel consequuntur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia saepe non debitis quo distinctio dicta hic sed cupiditate autem ipsa ea voluptates quis maxime numquam tempore, voluptatibus ullam doloremque nemo asperiores quisquam ex libero culpa illum? Corporis repudiandae exercitationem eveniet nisi iste odio architecto, quidem temporibus atque aperiam aut? In?</p>
+            </div>
+            <div class="img-wrapper-large "> 
+                <img src="https://via.placeholder.com/1080x920/000000?"  class="img-large" id="img-large" alt="">
+            </div>
+            <div class="txt-wrapper">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ex reiciendis aperiam repellendus ducimus pariatur maxime, illo dolorum est incidunt quidem eaque, delectus dolorem! Sapiente. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt consequatur dignissimos rem. Iure commodi quisquam perferendis praesentium quo labore animi. Animi nobis placeat, fugiat necessitatibus quo quam veniam rerum.</p>
+      
+
+                <p> I think that the javafx UI - library could be a useful use case</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia saepe non debitis quo distinctio dicta hic sed cupiditate autem ipsa ea voluptates quis maxime numquam tempore, voluptatibus ullam doloremque nemo asperiores quisquam ex libero culpa illum? Corporis repudiandae exercitationem eveniet nisi iste odio architecto, quidem temporibus atque aperiam aut? In?</p>
+            </div>
+        </div>
+    </div> 
+
+    
+    
+    <script>
+        function showHide(){
+            var element = document.getElementById("hidden");
+            
+            if (element.classList.contains("hidden"))
+            {
+                element.classList.replace("hidden", "show")
+                var info = document.getElementsByClassName("read-more").innerHTML
+                console.log(info)
+            }
+            else
+            {
+                element.classList.replace("show", "hidden")
+            }
+        }
+    </script>
+</body>
+</html>
